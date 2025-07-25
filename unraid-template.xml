@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Gameyfin</Name>
+  <Repository>https://github.com/gameyfin/gameyfin</Repository>
+  <Registry>ghcr.io/gameyfin/gameyfin:2</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/192271-support-gameyfin/</Support>
+  <Project>https://gameyfin.org</Project>
+  <ReadMe>https://gameyfin.org/installation/getting-started/</ReadMe>
+  <Overview>Manage your video games.&#xD;
+Gameyfin turns your video game files into a beautiful webpage.&#xD;
+Everything is stored locally (except videos) so its LAN-friendly as well!</Overview>
+  <Category>MediaServer:Other Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <Icon>https://raw.githubusercontent.com/gameyfin/gameyfin/refs/heads/main/assets/v2/Avatar.png</Icon>
+  <Config Name="App Key" Target="APP_KEY" Default="" Mode="" Description="16, 24 or 32 byte long Base64 encoded string, which can be generated using the following command: openssl rand -base64 32" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="App URL" Target="APP_URL" Default="" Mode="" Description="Set this if you are using Gameyfin with a reverse proxy" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="User ID" Target="PUID" Default="99" Mode="" Description="Set this if you want to run Gameyfin with a specific user ID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Group ID" Target="PGID" Default="100" Mode="" Description="Set this if you want to run Gameyfin with a specific group ID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Gameyfin Web UI" Target="8080" Default="8080" Mode="tcp" Description="Port for Gameyfins web UI (if you do not use a reverse proxy)" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Tracker port for Torrent plugin" Target="6969" Default="6969" Mode="tcp" Description="Set this if you plan to use the Torrent plugin" Type="Port" Display="always" Required="false" Mask="false">6969</Config>
+  <Config Name="Seed client port for Torrent plugin" Target="6881" Default="6881" Mode="tcp" Description="Set this if you plan to use the Torrent plugin" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
+  <Config Name="Video game library" Target="/games/my-video-game-library" Default="/path/on/host/to/video/game/files" Mode="rw" Description="Add as many video game files as you want" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
