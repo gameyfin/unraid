@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Gameyfin</Name>
-  <Repository>gameyfin/gameyfin</Repository>
-  <Registry>ghcr.io/gameyfin/gameyfin:2</Registry>
+  <Repository>ghcr.io/gameyfin/gameyfin:2</Repository>
+  <Registry>https://github.com/gameyfin/gameyfin/pkgs/container/gameyfin</Registry>
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
