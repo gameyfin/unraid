@@ -23,4 +23,8 @@ Everything is stored locally (except videos) so its LAN-friendly as well!</Overv
   <Config Name="Tracker port for Torrent plugin" Target="6969" Default="6969" Mode="tcp" Description="Set this if you plan to use the Torrent plugin" Type="Port" Display="always" Required="false" Mask="false">6969</Config>
   <Config Name="Seed client port for Torrent plugin" Target="6881" Default="6881" Mode="tcp" Description="Set this if you plan to use the Torrent plugin" Type="Port" Display="always" Required="false" Mask="false">6881</Config>
   <Config Name="Video game library" Target="/games/my-video-game-library" Default="/path/on/host/to/video/game/files" Mode="rw" Description="Add as many video game files as you want" Type="Path" Display="always" Required="true" Mask="false"/>
+  
+  <Config Name="Database Directory" Target="/opt/gameyfin/db" Default="/mnt/user/appdata/gameyfin/db" Mode="rw" Description="Where Gameyfins database will be stored" Type="Path" Display="advanced" Required="true" Mask="false" />
+  <Config Name="Data Directory" Target="/opt/gameyfin/data" Default="/mnt/user/appdata/gameyfin/data" Mode="rw" Description="Where Gameyfins media (images) will be stored" Type="Path" Display="advanced" Required="true" Mask="false" />
+  <Config Name="Logs Directory" Target="/opt/gameyfin/logs" Default="/mnt/user/appdata/gameyfin/logs" Mode="rw" Description="Where Gameyfins logs will be stored" Type="Path" Display="advanced" Required="true" Mask="false" />
 </Container>
