@@ -26,6 +26,7 @@ Everything is stored locally (except videos) so its LAN-friendly as well!</Overv
   
   <Config Name="Database Directory" Target="/opt/gameyfin/db" Default="/mnt/user/appdata/gameyfin/db" Mode="rw" Description="Where Gameyfins database will be stored" Type="Path" Display="advanced" Required="true" Mask="false" />
   <Config Name="Data Directory" Target="/opt/gameyfin/data" Default="/mnt/user/appdata/gameyfin/data" Mode="rw" Description="Where Gameyfins media (images) will be stored" Type="Path" Display="advanced" Required="true" Mask="false" />
+  <Config Name="Installed Plugins Directory" Target="/opt/gameyfin/plugins-installed" Default="/mnt/user/appdata/gameyfin/plugins-installed" Mode="rw" Description="Where the plugins downloaded from marketplaces will be saved" Type="Path" Display="advanced" Required="true" Mask="false" />
   <Config Name="Plugin Data Directory" Target="/opt/gameyfin/plugindata" Default="/mnt/user/appdata/gameyfin/plugindata" Mode="rw" Description="Where the installed plugins will store their data" Type="Path" Display="advanced" Required="true" Mask="false" />
   <Config Name="Logs Directory" Target="/opt/gameyfin/logs" Default="/mnt/user/appdata/gameyfin/logs" Mode="rw" Description="Where Gameyfins logs will be stored" Type="Path" Display="advanced" Required="true" Mask="false" />
 </Container>
